@@ -1,0 +1,271 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@500&display=swap");
+
+html {
+	height: 100%;
+}
+body {
+	overflow-x: hidden;
+
+	height: 100%;
+
+	background: linear-gradient(
+		360deg,
+		rgba(238, 227, 191, 0.84) 2.91%,
+		rgba(177, 226, 228, 0.815) 100%
+	);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+
+.navText {
+	color: rgb(241, 198, 148);
+	font-family: "League Spartan", sans-serif;
+	font-size: 1.8rem;
+}
+
+.navbar-collapse {
+	justify-content: flex-end;
+}
+
+@media screen and (min-width: 336px) and (max-width: 440px) {
+	.navBtn {
+		margin-bottom: 0.9em;
+	}
+}
+
+@media screen and (max-width: 327px) {
+	.navBtn {
+		margin-bottom: 0.9em;
+	}
+}
+
+.text {
+	color: rgba(var(--bs-dark-rgb));
+	font-family: "League Spartan", sans-serif;
+	font-size: 1.2rem;
+}
+
+.textFirst {
+	color: rgba(var(--bs-dark-rgb));
+	font-family: "League Spartan", sans-serif;
+	font-size: 1.2rem;
+}
+
+.bigCont {
+	background-image: url(images/Tipos-de-ingenieria-que-puedes-estudiar.jpg);
+
+	background-size: cover;
+	mix-blend-mode: multiply;
+	box-shadow: 1em 1em 1em 0.5em rgba(41, 40, 40, 0.425);
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+}
+
+.hCont {
+	padding: 5em;
+}
+
+@media screen and (max-width: 990px) {
+	.hCont {
+		background: linear-gradient(
+			360deg,
+			rgba(238, 227, 191, 0.84) 2.91%,
+			rgba(198, 230, 231, 0.815) 100%
+		);
+	}
+}
+
+.button {
+	width: 18em;
+	height: 4rem;
+	font-family: "League Spartan", sans-serif;
+	font-size: 1.1rem;
+
+	letter-spacing: 0.4em;
+	font-weight: 600;
+	color: rgb(24, 22, 22);
+	background-color: rgb(241, 198, 148);
+	border: none;
+	border-radius: 4em;
+	box-shadow: 1em 1em 1em rgba(41, 40, 40, 0.425);
+	transition: all 0.3s ease 0s;
+	cursor: pointer;
+	outline: none;
+	margin-top: 3em;
+}
+
+.button:hover {
+	/* background-color: rgba(var(--bs-dark-rgb)); */
+
+	/* box-shadow: 0.5em 1em 1em rgb(241, 198, 148); */
+	/* color: rgb(241, 198, 148); */
+	transform: translateY(-0.5em);
+	transition-duration: 0.5s;
+	background-color: rgb(248, 163, 66);
+}
+
+.landingImg {
+	background-image: url(images/INGENIEROS-CIVILES-Qué-hacen-Para-qué-sirve-su-trabajo-06-1024x785.jpg);
+	background-size: cover;
+	display: block;
+	border-radius: 25%;
+}
+
+.box {
+	background: linear-gradient(
+		360deg,
+		rgba(238, 227, 191, 0.84) 2.91%,
+		rgba(177, 226, 228, 0.815) 100%
+	);
+	border-radius: 10%;
+}
+
+@media screen and (max-width: 800px) {
+	#logoText {
+		display: none;
+	}
+}
+
+/* Servicios Style */
+
+.bordeCool {
+	border-radius: 10px;
+	box-shadow: 1.5px -1.5px rgba(41, 40, 40, 0.425);
+}
+
+.contBox {
+	border-radius: 10px;
+	box-shadow: 0.5em 0.5em 0.5em 0.5em rgba(41, 40, 40, 0.425);
+	position: relative;
+	background: linear-gradient(
+		360deg,
+		rgba(199, 238, 240, 0.815) 1%,
+		rgba(238, 227, 191, 0.84) 40%
+	);
+}
+
+.contBox :hover {
+	transition: 0.8s;
+	color: rgb(241, 198, 148);
+	background: rgb(63, 61, 61);
+	border-radius: 10px;
+	user-select: none;
+}
+
+.leftBox :hover {
+	transform: translateX(0.25em);
+}
+
+.rightBox :hover {
+	transform: translateX(-0.25em);
+}
+
+.contBox ul {
+	border-radius: 10px;
+	box-shadow: 0.1em 0.1em rgba(41, 40, 40, 0.425);
+}
+
+.contBox h2 {
+	border-radius: 10px;
+	box-shadow: -1.5px -1.5px rgba(41, 40, 40, 0.425);
+}
+
+.contBox h2:hover {
+	border-radius: 10px;
+	box-shadow: -1.5px -1.5px rgb(252, 202, 127);
+}
+
+.contBox ul:hover {
+	border-radius: 10px;
+	box-shadow: 1.5px 1.5px rgb(252, 202, 127);
+}
+
+.contBox button {
+	font-family: "League Spartan", sans-serif;
+	font-size: 1rem;
+
+	letter-spacing: 0.25em;
+	font-weight: 600;
+	color: rgb(24, 22, 22);
+	background-color: rgb(252, 202, 127);
+	border: none;
+	border-radius: 4em;
+	box-shadow: 1em 1em 1em rgba(41, 40, 40, 0.425);
+	transition: all 0.3s ease 0s;
+	cursor: pointer;
+	outline: none;
+
+	position: absolute;
+	bottom: 0;
+	right: 0;
+}
+
+.contBox button:hover {
+	border: 2px solid rgb(252, 202, 127);
+	border-radius: 4em;
+}
+
+@media screen and (max-width: 990px) {
+	hr {
+		display: none;
+	}
+}
+
+/* Clientes */
+
+.whyUs button {
+	font-family: "League Spartan", sans-serif;
+	font-size: 1.2rem;
+
+	letter-spacing: 0.2em;
+	font-weight: 600;
+	color: rgb(24, 22, 22);
+	background-color: rgb(252, 202, 127);
+	border: none;
+	border-radius: 4em;
+	box-shadow: 1em 1em 1em rgba(41, 40, 40, 0.425);
+	transition: all 0.3s ease 0s;
+	cursor: pointer;
+	outline: none;
+}
+
+.whyUs button:hover {
+	transform: translateY(-0.5em);
+	transition-duration: 0.5s;
+	background-color: rgb(248, 163, 66);
+}
+
+/* NOSOTROS */
+
+.usCont {
+	background-image: url(images/qweqweqwe.avif);
+	background-size: cover;
+	mix-blend-mode: multiply;
+	box-shadow: 1em 1em 1em 0.5em rgba(41, 40, 40, 0.425);
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+	margin-top: 3em;
+}
+
+.nosTitle {
+	border-radius: 10px;
+	box-shadow: 0.5em 0.5em 1.5em rgba(41, 40, 40, 0.425);
+	background: linear-gradient(
+		360deg,
+		rgba(199, 238, 240, 0.815) 1%,
+		rgba(238, 227, 191, 0.84) 40%
+	);
+}
+
+.nosBoxes {
+	border-radius: 10px;
+	user-select: none;
+	mix-blend-mode: none;
+	box-shadow: 0.5em 0.5em 1.2em rgba(41, 40, 40, 0.425);
+	background: linear-gradient(
+		360deg,
+		rgba(199, 238, 240, 0.815) 1%,
+		rgba(238, 227, 191, 0.84) 40%
+	);
+	position: relative;
+}
